@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 import Banner from '../../components/Banner'
 import ProductsList from '../../components/ProductsList'
 
+import { useGetOnSaleQuery, useGetSoonQuery } from '../../services/api'
+
 export interface GalleryItem {
   type: 'image' | 'video'
   url: string
@@ -33,26 +35,38 @@ export type Game = {
 }
 
 const Home = () => {
-  const [promocoes, setPromocoes] = useState<Game[]>([])
-  const [emBreve, setEmbreve] = useState<Game[]>([])
+  const {
+    data: onSaleGames,
+    isError: isErroOnSale,
+    isLoading: isLoadingOnSale
+  } = useGetOnSaleQuery()
+  const {
+    data: soonGames,
+    isError: isErroSoon,
+    isLoading: isLoadingSoon
+  } = useGetSoonQuery()
 
-  useEffect(() => {
-    fetch('https://api-ebac.vercel.app/api/eplay/promocoes')
-      .then((res) => res.json())
-      .then((res) => setPromocoes(res))
-  }, [])
+  if (isLoadingOnSale || isLoadingSoon) {
+    return <h4>Carregando</h4>
+  }
 
-  useEffect(() => {
-    fetch('https://api-ebac.vercel.app/api/eplay/em-breve')
-      .then((res) => res.json())
-      .then((res) => setEmbreve(res))
-  }, [])
+  if (isErroOnSale || isErroSoon) {
+    return <h4>Erro ao carregar os jogos</h4>
+  }
 
   return (
     <>
       <Banner />
-      <ProductsList title="Promoções" background="gray" games={promocoes} />
-      <ProductsList title="Em Breve" background="black" games={emBreve} />
+      <ProductsList
+        title="Promoções"
+        background="gray"
+        games={onSaleGames ?? []}
+      />
+      <ProductsList
+        title="Em Breve"
+        background="black"
+        games={soonGames ?? []}
+      />
     </>
   )
 }
