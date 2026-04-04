@@ -1,0 +1,47 @@
+"filename", "language", "JSON with Comments", "TypeScript", "TypeScript JSX", "JSON", "Markdown", "XML", "HTML", "comment", "blank", "total"
+"c:\Users\Usuario\Documents\Code\eplay\.eslintrc.json", "JSON with Comments", 35, 0, 0, 0, 0, 0, 0, 0, 1, 36
+"c:\Users\Usuario\Documents\Code\eplay\.prettierrc", "JSON", 0, 0, 0, 5, 0, 0, 0, 0, 1, 6
+"c:\Users\Usuario\Documents\Code\eplay\README.md", "Markdown", 0, 0, 0, 0, 26, 0, 0, 0, 21, 47
+"c:\Users\Usuario\Documents\Code\eplay\package-lock.json", "JSON", 0, 0, 0, 17432, 0, 0, 0, 0, 1, 17433
+"c:\Users\Usuario\Documents\Code\eplay\package.json", "JSON", 0, 0, 0, 58, 0, 0, 0, 0, 1, 59
+"c:\Users\Usuario\Documents\Code\eplay\public\index.html", "HTML", 0, 0, 0, 0, 0, 0, 23, 23, 1, 47
+"c:\Users\Usuario\Documents\Code\eplay\public\manifest.json", "JSON", 0, 0, 0, 25, 0, 0, 0, 0, 1, 26
+"c:\Users\Usuario\Documents\Code\eplay\src\App.tsx", "TypeScript JSX", 0, 0, 24, 0, 0, 0, 0, 0, 4, 28
+"c:\Users\Usuario\Documents\Code\eplay\src\assets\images\carrinho.svg", "XML", 0, 0, 0, 0, 0, 9, 0, 0, 1, 10
+"c:\Users\Usuario\Documents\Code\eplay\src\assets\images\logo.svg", "XML", 0, 0, 0, 0, 0, 10, 0, 0, 1, 11
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Banner\index.tsx", "TypeScript JSX", 0, 0, 34, 0, 0, 0, 0, 0, 7, 41
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Banner\styles.ts", "TypeScript", 0, 47, 0, 0, 0, 0, 0, 0, 4, 51
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Button\index.tsx", "TypeScript JSX", 0, 0, 37, 0, 0, 0, 0, 0, 5, 42
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Button\styles.ts", "TypeScript", 0, 25, 0, 0, 0, 0, 0, 0, 5, 30
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Cart\idex.tsx", "TypeScript JSX", 0, 0, 21, 0, 0, 0, 0, 0, 3, 24
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Cart\styles.ts", "TypeScript", 0, 28, 0, 0, 0, 0, 0, 0, 4, 32
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Footer\index.tsx", "TypeScript JSX", 0, 0, 54, 0, 0, 0, 0, 0, 4, 58
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Footer\styles.ts", "TypeScript", 0, 24, 0, 0, 0, 0, 0, 0, 5, 29
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Gallery\index.tsx", "TypeScript JSX", 0, 0, 96, 0, 0, 0, 0, 0, 14, 110
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Gallery\style.ts", "TypeScript", 0, 96, 0, 0, 0, 0, 0, 0, 6, 102
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Header\index.tsx", "TypeScript JSX", 0, 0, 31, 0, 0, 0, 0, 0, 5, 36
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Header\styles.ts", "TypeScript", 0, 36, 0, 0, 0, 0, 0, 0, 5, 41
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Hero\index.tsx", "TypeScript JSX", 0, 0, 37, 0, 0, 0, 0, 0, 4, 41
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Hero\styles.ts", "TypeScript", 0, 58, 0, 0, 0, 0, 0, 0, 3, 61
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Product\index.tsx", "TypeScript JSX", 0, 0, 42, 0, 0, 0, 0, 0, 3, 45
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Product\styles.ts", "TypeScript", 0, 42, 0, 0, 0, 0, 0, 0, 5, 47
+"c:\Users\Usuario\Documents\Code\eplay\src\components\ProductsList\index.tsx", "TypeScript JSX", 0, 0, 52, 0, 0, 0, 0, 0, 9, 61
+"c:\Users\Usuario\Documents\Code\eplay\src\components\ProductsList\styles.ts", "TypeScript", 0, 26, 0, 0, 0, 0, 0, 0, 3, 29
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Section\index.tsx", "TypeScript JSX", 0, 0, 15, 0, 0, 0, 0, 0, 4, 19
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Section\styles.ts", "TypeScript", 0, 25, 0, 0, 0, 0, 0, 0, 4, 29
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Tag\index.tsx", "TypeScript JSX", 0, 0, 10, 0, 0, 0, 0, 0, 4, 14
+"c:\Users\Usuario\Documents\Code\eplay\src\components\Tag\styles.ts", "TypeScript", 0, 12, 0, 0, 0, 0, 0, 0, 3, 15
+"c:\Users\Usuario\Documents\Code\eplay\src\index.tsx", "TypeScript JSX", 0, 0, 11, 0, 0, 0, 0, 3, 3, 17
+"c:\Users\Usuario\Documents\Code\eplay\src\pages\Categories\index.tsx", "TypeScript JSX", 0, 0, 34, 0, 0, 0, 0, 0, 7, 41
+"c:\Users\Usuario\Documents\Code\eplay\src\pages\Home\index.tsx", "TypeScript JSX", 0, 0, 65, 0, 0, 0, 0, 0, 10, 75
+"c:\Users\Usuario\Documents\Code\eplay\src\pages\Product\index.tsx", "TypeScript JSX", 0, 0, 37, 0, 0, 0, 0, 0, 7, 44
+"c:\Users\Usuario\Documents\Code\eplay\src\react-app-env.d.ts", "TypeScript", 0, 0, 0, 0, 0, 0, 0, 1, 1, 2
+"c:\Users\Usuario\Documents\Code\eplay\src\reportWebVitals.ts", "TypeScript", 0, 13, 0, 0, 0, 0, 0, 0, 3, 16
+"c:\Users\Usuario\Documents\Code\eplay\src\routes.tsx", "TypeScript JSX", 0, 0, 12, 0, 0, 0, 0, 0, 4, 16
+"c:\Users\Usuario\Documents\Code\eplay\src\services\api.ts", "TypeScript", 0, 48, 0, 0, 0, 0, 0, 0, 4, 52
+"c:\Users\Usuario\Documents\Code\eplay\src\setupTests.ts", "TypeScript", 0, 1, 0, 0, 0, 0, 0, 4, 1, 6
+"c:\Users\Usuario\Documents\Code\eplay\src\store\index.ts", "TypeScript", 0, 12, 0, 0, 0, 0, 0, 0, 5, 17
+"c:\Users\Usuario\Documents\Code\eplay\src\store\reducers\cart.ts", "TypeScript", 0, 19, 0, 0, 0, 0, 0, 2, 5, 26
+"c:\Users\Usuario\Documents\Code\eplay\src\styles.ts", "TypeScript", 0, 29, 0, 0, 0, 0, 0, 0, 3, 32
+"c:\Users\Usuario\Documents\Code\eplay\tsconfig.json", "JSON with Comments", 26, 0, 0, 0, 0, 0, 0, 0, 1, 27
+"Total", "-", 61, 541, 612, 17520, 26, 19, 23, 33, 196, 19031

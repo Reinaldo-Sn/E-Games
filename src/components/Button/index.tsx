@@ -1,13 +1,14 @@
 import { ReactNode } from 'react'
-import { ButtonContainer, ButtonLink } from './styles'
+import * as S from './styles'
 
 export type Props = {
-  variant?: 'primary' | 'secondary'
-  type: 'button' | 'link'
+  $variant?: 'primary' | 'secondary'
+  type: 'button' | 'link' | 'submit'
   title: string
   to?: string
   onClick?: () => void
   children: ReactNode
+  disabled?: boolean
 }
 
 const Button = ({
@@ -16,25 +17,27 @@ const Button = ({
   title,
   to,
   onClick,
-  variant = 'primary'
+  $variant = 'primary',
+  disabled
 }: Props) => {
-  if (type == 'button') {
+  if (type === 'button' || type === 'submit') {
     return (
-      <ButtonContainer
-        variant={variant}
-        type="button"
+      <S.ButtonContainer
+        $variant={$variant}
+        type={type}
         title={title}
         onClick={onClick}
+        disabled={disabled}
       >
         {children}
-      </ButtonContainer>
+      </S.ButtonContainer>
     )
   }
 
   return (
-    <ButtonLink title={title} to={to as string}>
+    <S.ButtonLink title={title} to={to as string}>
       {children}
-    </ButtonLink>
+    </S.ButtonLink>
   )
 }
 

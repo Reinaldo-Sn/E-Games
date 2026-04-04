@@ -1,40 +1,53 @@
-import { formataPreco } from '../ProductsList'
-import { Game } from '../../pages/Home'
+import { useDispatch } from 'react-redux'
+
 import Button from '../Button'
 import Tag from '../Tag'
-import { Banner, Infos } from './styles'
+import { add, open } from '../../store/reducers/cart'
+import { parseToBrl } from '../../utils'
+
+import * as S from './styles'
 
 type Props = {
   game: Game
 }
 
-const Hero = ({ game }: Props) => (
-  <Banner style={{ backgroundImage: `url(${game.media.cover})` }}>
-    <div className="container">
-      <div>
-        <Tag>{game.details.category}</Tag>
-        <Tag>{game.details.system}</Tag>
-      </div>
-      <Infos>
-        <h2>{game.name}</h2>
-        <p>
-          {game.prices.discount && (
-            <span>DE R$ {formataPreco(game.prices.old)}</span>
+const Hero = ({ game }: Props) => {
+  const dispath = useDispatch()
+
+  const addToCart = () => {
+    dispath(add(game))
+    dispath(open())
+  }
+
+  return (
+    <S.Banner style={{ backgroundImage: `url(${game.media.cover})` }}>
+      <div className="container">
+        <div>
+          <Tag>{game.details.category}</Tag>
+          <Tag>{game.details.system}</Tag>
+        </div>
+        <S.Infos>
+          <h2>{game.name}</h2>
+          <p>
+            {game.prices.discount && (
+              <span>DE R$ {parseToBrl(game.prices.old)}</span>
+            )}
+            {game.prices.current && <>Por {parseToBrl(game.prices.current)}</>}
+          </p>
+          {game.prices.current && (
+            <Button
+              type={'button'}
+              $variant="primary"
+              title={'clique aqui para adicionar esse jogo ao carrinho'}
+              onClick={addToCart}
+            >
+              Adicionar ao carrinho
+            </Button>
           )}
-          {game.prices.current && <>Por {formataPreco(game.prices.current)}</>}
-        </p>
-        {game.prices.current && (
-          <Button
-            type={'button'}
-            variant="primary"
-            title={'clique aqui para adicionar esse jogo ao carrinho'}
-          >
-            Adicionar ao carrinho
-          </Button>
-        )}
-      </Infos>
-    </div>
-  </Banner>
-)
+        </S.Infos>
+      </div>
+    </S.Banner>
+  )
+}
 
 export default Hero

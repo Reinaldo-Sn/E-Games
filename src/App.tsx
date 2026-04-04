@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import { GlobalCss } from './styles'
 import { store } from './store'
+import Cart from './components/Cart/idex'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         </div>
         <Rotas />
         <Footer />
+        <Cart />
       </BrowserRouter>
     </Provider>
   )
